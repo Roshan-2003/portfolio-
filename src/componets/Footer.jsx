@@ -14,7 +14,7 @@ const Footer = ({ isDark }) => {
 
   return (
     <footer
-      className={`w-full py-16 px-4 border-t transition-colors duration-300 ${
+      className={`w-full py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-10 border-t transition-colors duration-300 ${
         isDark
           ? "bg-slate-950 border-slate-800"
           : "bg-slate-50 border-slate-200"
@@ -23,7 +23,7 @@ const Footer = ({ isDark }) => {
       <div className="max-w-4xl mx-auto flex flex-col items-center text-center">
         {/* Name */}
         <h2
-          className={`text-3xl font-bold mb-2 ${
+          className={`text-2xl sm:text-3xl md:text-4xl font-bold mb-2 ${
             isDark ? "text-white" : "text-slate-900"
           }`}
         >
@@ -31,7 +31,7 @@ const Footer = ({ isDark }) => {
         </h2>
 
         <p
-          className={`font-medium mb-10 ${
+          className={`text-xs sm:text-sm md:text-base font-medium mb-8 sm:mb-10 ${
             isDark ? "text-slate-400" : "text-slate-500"
           }`}
         >
@@ -39,57 +39,57 @@ const Footer = ({ isDark }) => {
         </p>
 
         {/* Social Icons */}
-        <div className="flex gap-5 mb-12">
+        <div className="flex gap-4 sm:gap-5 mb-8 sm:mb-12">
           {/* GitHub */}
           <a
             href="https://github.com/Roshan-2003"
             target="_blank"
             rel="noopener noreferrer"
-            className={`w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 ${
+            className={`w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 ${
               isDark
                 ? "bg-slate-900 text-slate-300 hover:text-white border border-slate-700"
                 : "bg-white text-slate-600 hover:text-blue-600 shadow-sm hover:shadow-md"
             }`}
           >
-            <FiGithub size={20} />
+            <FiGithub size={18} className="sm:w-5 sm:h-5" />
           </a>
 
           <a
             href="https://www.linkedin.com/in/roshan-bhagat-a51407290?utm_source=share_via&utm_content=profile&utm_medium=member_android"
             target="_blank"
             rel="noopener noreferrer"
-            className={`w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 ${
+            className={`w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 ${
               isDark
                 ? "bg-slate-900 text-slate-300 hover:text-white border border-slate-700"
                 : "bg-white text-slate-600 hover:text-blue-600 shadow-sm hover:shadow-md"
             }`}
           >
-            <LuLinkedin size={20} />
+            <LuLinkedin size={18} className="sm:w-5 sm:h-5" />
           </a>
 
           {/* Email */}
           <a
-            href="mailto:bhagatroshan182@gmail.com"
-            className={`w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 ${
+            href="mailto:bhagatroshan1822@gmail.com"
+            className={`w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 ${
               isDark
                 ? "bg-slate-900 text-slate-300 hover:text-white border border-slate-700"
                 : "bg-white text-slate-600 hover:text-blue-600 shadow-sm hover:shadow-md"
             }`}
           >
-            <Mail size={20} />
+            <Mail size={18} className="sm:w-5 sm:h-5" />
           </a>
         </div>
 
         {/* Divider */}
         <div
-          className={`w-full max-w-xl h-px mb-8 ${
+          className={`w-full max-w-xl h-px mb-6 sm:mb-8 ${
             isDark ? "bg-slate-700" : "bg-slate-200"
           }`}
         />
 
         {/* Copyright */}
         <p
-          className={`text-sm mb-10 ${
+          className={`text-xs sm:text-sm mb-8 sm:mb-10 ${
             isDark ? "text-slate-500" : "text-slate-400"
           }`}
         >
@@ -99,7 +99,7 @@ const Footer = ({ isDark }) => {
         {/* Back To Top */}
         <button
           onClick={scrollToTop}
-          className={`px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:-translate-y-1 ${
+          className={`w-full sm:w-auto px-6 sm:px-8 py-2.5 sm:py-3 text-xs sm:text-sm md:text-base rounded-xl font-semibold transition-all duration-300 hover:-translate-y-1 ${
             isDark
               ? "bg-slate-900 text-white border border-slate-700 hover:bg-slate-800"
               : "bg-white text-slate-700 border border-slate-200 shadow-sm hover:shadow-md"

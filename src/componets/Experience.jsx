@@ -69,7 +69,7 @@ const Experience = ({ isDark }) => {
   return (
     <section
       id="experience"
-      className={`py-16 relative overflow-hidden transition-colors duration-300 ${
+      className={`py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-10 relative overflow-hidden transition-colors duration-300 ${
         isDark ? "bg-slate-950" : "bg-white"
       }`}
     >
@@ -80,12 +80,12 @@ const Experience = ({ isDark }) => {
         }`}
       ></div>
 
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto relative z-10">
         {/* Heading */}
-        <div className="text-center mb-16">
-          <h2
-            className={`text-4xl font-extrabold mb-4 tracking-tight ${
-              isDark ? "text-white" : "text-slate-900"
+        <div className="text-center mb-12 sm:mb-16">
+   <h2
+            className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 ${
+              isDark ? "text-white" : "text-slate-800"
             }`}
           >
             Experience & Projects
@@ -94,7 +94,7 @@ const Experience = ({ isDark }) => {
           <div className="h-1 w-24 bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto rounded-full"></div>
 
           <p
-            className={`mt-5 text-lg ${
+            className={`mt-5 text-xs sm:text-sm md:text-base lg:text-lg ${
               isDark ? "text-slate-400" : "text-slate-500"
             }`}
           >
@@ -105,7 +105,7 @@ const Experience = ({ isDark }) => {
         {/* Sub Heading */}
         <div className="mb-6">
           <h3
-            className={`text-2xl font-bold ${
+            className={`text-xl sm:text-2xl font-bold ${
               isDark ? "text-white" : "text-slate-800"
             }`}
           >
@@ -118,24 +118,24 @@ const Experience = ({ isDark }) => {
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className={`p-6 md:p-8 rounded-3xl transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl ${
+              className={`p-5 sm:p-6 md:p-8 rounded-2xl sm:rounded-3xl transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl ${
                 isDark
                   ? "bg-slate-900 border border-slate-700 shadow-black/30"
                   : "bg-white border border-slate-100 shadow-xl shadow-blue-900/5"
               }`}
             >
               {/* Header */}
-              <div className="flex flex-col md:flex-row justify-between gap-6 mb-5">
-                <div className="flex items-center gap-5">
+              <div className="flex flex-col md:flex-row justify-between gap-5 mb-5">
+                <div className="flex items-center gap-4 sm:gap-5">
                   <div
-                    className={`w-16 h-16 rounded-2xl flex items-center justify-center text-white shadow-lg ${exp.iconBg}`}
+                    className={`w-12 h-12 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl flex shrink-0 items-center justify-center text-white shadow-lg ${exp.iconBg}`}
                   >
-                    <Briefcase size={28} />
+                    <Briefcase size={24} className="sm:w-7 sm:h-7" />
                   </div>
 
                   <div>
                     <h4
-                      className={`text-2xl font-bold ${
+                      className={`text-lg sm:text-xl md:text-2xl font-bold ${
                         isDark ? "text-white" : "text-slate-800"
                       }`}
                     >
@@ -143,7 +143,7 @@ const Experience = ({ isDark }) => {
                     </h4>
 
                     <p
-                      className={`font-semibold text-lg ${
+                      className={`font-semibold text-sm sm:text-base md:text-lg ${
                         isDark ? "text-blue-400" : "text-blue-600"
                       }`}
                     >
@@ -153,17 +153,17 @@ const Experience = ({ isDark }) => {
                 </div>
 
                 <div
-                  className={`flex flex-col md:items-end gap-2 text-sm ${
+                  className={`flex flex-col md:items-end gap-1.5 sm:gap-2 text-xs sm:text-sm ${
                     isDark ? "text-slate-400" : "text-slate-500"
                   }`}
                 >
                   <div className="flex items-center gap-2">
-                    <Calendar size={16} />
+                    <Calendar size={14} className="sm:w-4 sm:h-4" />
                     <span>{exp.duration}</span>
                   </div>
 
                   <div className="flex items-center gap-2">
-                    <MapPin size={16} />
+                    <MapPin size={14} className="sm:w-4 sm:h-4" />
                     <span>{exp.location}</span>
                   </div>
                 </div>
@@ -171,7 +171,7 @@ const Experience = ({ isDark }) => {
 
               {/* Description */}
               <p
-                className={`leading-8 mb-5 ${
+                className={`text-xs sm:text-sm md:text-base leading-relaxed sm:leading-8 mb-5 ${
                   isDark ? "text-slate-300" : "text-slate-600"
                 }`}
               >
@@ -179,11 +179,11 @@ const Experience = ({ isDark }) => {
               </p>
 
               {/* Skills */}
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-wrap gap-2 sm:gap-3">
                 {exp.skills.map((skill, i) => (
                   <span
                     key={i}
-                    className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+                    className={`px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium transition-colors ${
                       isDark
                         ? "bg-slate-800 text-slate-200 border border-slate-700"
                         : "bg-slate-100 text-slate-600 border border-slate-200"

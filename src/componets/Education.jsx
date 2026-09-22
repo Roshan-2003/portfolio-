@@ -30,24 +30,25 @@ const Education = ({ isDark }) => {
   return (
     <section
       id="education"
-      className={`py-20 relative overflow-hidden transition-colors duration-300 ${
+      className={`py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-10 relative overflow-hidden transition-colors duration-300 ${
         isDark ? "bg-slate-950" : "bg-white"
       }`}
     >
-      <div className="max-w-6xl mx-auto px-6 relative">
+      <div className="max-w-6xl mx-auto relative">
         {/* Heading */}
-       <div className="text-center mb-16">
-          <h2
-            className={`text-4xl font-bold mb-4 ${
+        <div className="text-center mb-12 sm:mb-16">
+        <h2
+            className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 ${
               isDark ? "text-white" : "text-slate-800"
             }`}
           >
-Education & Projects          </h2>
+            Education & Qualifications
+          </h2>
 
           <div className="h-1 w-20 bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto rounded-full mb-6"></div>
 
           <p
-            className={`max-w-3xl mx-auto text-lg ${
+            className={`max-w-3xl mx-auto text-xs sm:text-sm md:text-base lg:text-lg ${
               isDark ? "text-slate-400" : "text-slate-500"
             }`}
           >
@@ -65,7 +66,7 @@ Education & Projects          </h2>
             }`}
           ></div>
 
-          <div className="space-y-10">
+          <div className="space-y-6 sm:space-y-10">
             {educationData.map((item, index) => (
               <div key={index} className="relative flex items-start">
                 {/* Timeline Dot */}
@@ -78,24 +79,24 @@ Education & Projects          </h2>
                 ></div>
 
                 {/* Card */}
-                <div className="ml-10 w-full">
+                <div className="ml-6 sm:ml-10 w-full">
                   <div
-                    className={`rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl ${
+                    className={`rounded-2xl sm:rounded-3xl p-5 sm:p-6 md:p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl ${
                       isDark
                         ? "bg-slate-900 border border-slate-700 shadow-black/30"
                         : "bg-white border border-slate-100 shadow-xl shadow-blue-900/5"
                     }`}
                   >
                     {/* Header */}
-                    <div className="flex flex-col md:flex-row justify-between gap-5 mb-5">
-                      <div className="flex items-center gap-4">
-                        <div className="w-14 h-14 rounded-xl bg-blue-600 text-white flex items-center justify-center shadow-lg">
-                          <GraduationCap size={24} />
+                    <div className="flex flex-col md:flex-row justify-between gap-3 sm:gap-5 mb-4 sm:mb-5">
+                      <div className="flex items-center gap-3 sm:gap-4">
+                        <div className="w-10 h-10 sm:w-14 sm:h-14 shrink-0 rounded-xl bg-blue-600 text-white flex items-center justify-center shadow-lg">
+                          <GraduationCap size={20} className="sm:w-6 sm:h-6" />
                         </div>
 
                         <div>
                           <span
-                            className={`inline-block px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wide ${
+                            className={`inline-block px-3 sm:px-4 py-0.5 sm:py-1 rounded-full text-[10px] sm:text-xs font-bold uppercase tracking-wide ${
                               isDark
                                 ? "bg-blue-900/40 text-blue-300"
                                 : "bg-blue-100 text-blue-600"
@@ -105,7 +106,7 @@ Education & Projects          </h2>
                           </span>
 
                           <p
-                            className={`mt-2 text-sm ${
+                            className={`mt-1 sm:mt-2 text-xs sm:text-sm ${
                               isDark
                                 ? "text-slate-400"
                                 : "text-slate-500"
@@ -116,15 +117,15 @@ Education & Projects          </h2>
                         </div>
                       </div>
 
-                      <div className="flex items-center gap-2 text-green-500 font-bold">
-                        <Award size={18} />
+                      <div className="flex items-center gap-2 text-green-500 font-bold text-xs sm:text-sm md:text-base">
+                        <Award size={16} className="sm:w-[18px] sm:h-[18px]" />
                         <span>{item.result}</span>
                       </div>
                     </div>
 
                     {/* Content */}
                     <h3
-                      className={`text-2xl font-bold mb-2 ${
+                      className={`text-lg sm:text-xl md:text-2xl font-bold mb-2 ${
                         isDark ? "text-white" : "text-slate-800"
                       }`}
                     >
@@ -132,7 +133,7 @@ Education & Projects          </h2>
                     </h3>
 
                     <p
-                      className={`font-semibold text-lg ${
+                      className={`font-semibold text-xs sm:text-sm md:text-base lg:text-lg ${
                         isDark ? "text-blue-400" : "text-blue-600"
                       }`}
                     >
@@ -144,9 +145,6 @@ Education & Projects          </h2>
             ))}
           </div>
         </div>
-
-        {/* Footer */}
-     
       </div>
     </section>
   );

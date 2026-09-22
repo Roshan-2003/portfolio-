@@ -5,7 +5,7 @@ const About = ({ isDark }) => {
   return (
     <section
       id="about"
-      className={`py-16 md:py-24 relative overflow-hidden transition-colors duration-500 
+      className={`py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-10 relative overflow-hidden transition-colors duration-500 
       ${isDark ? "bg-[#0f172a]" : "bg-[#f8faff]"}`}
     >
       {/* Background Glow - Adjusted for mobile performance */}
@@ -15,11 +15,11 @@ const About = ({ isDark }) => {
         }`}
       ></div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto relative z-10">
         {/* Section Heading */}
-        <div className="text-center mb-12 md:mb-16">
+        <div className="text-center mb-10 sm:mb-12 md:mb-16">
           <h2
-            className={`text-2xl sm:text-3xl  font-bold mb-4 px-2 ${isDark ? "text-white" : "text-slate-800"}`}
+            className={`text-2xl sm:text-3xl md:text-4xl font-bold mb-4 px-2 ${isDark ? "text-white" : "text-slate-800"}`}
           >
             About Roshan Bhagat – Frontend Developer
           </h2>
@@ -32,7 +32,7 @@ const About = ({ isDark }) => {
           <div className="flex flex-col gap-6 md:gap-8">
             {/* Who I Am Card */}
             <div
-              className={`p-6 md:p-8 rounded-[1.5rem] md:rounded-[2rem] border transition-all duration-300 hover:translate-y-[-5px] ${
+              className={`p-5 sm:p-6 md:p-8 rounded-2xl sm:rounded-[1.5rem] md:rounded-[2rem] border transition-all duration-300 hover:translate-y-[-5px] ${
                 isDark
                   ? "bg-slate-900 border-slate-800"
                   : "bg-white border-transparent shadow-xl shadow-blue-900/5"
@@ -43,13 +43,13 @@ const About = ({ isDark }) => {
                   <User size={20} className="md:w-6 md:h-6" />
                 </div>
                 <h3
-                  className={`text-lg md:text-xl font-bold ${isDark ? "text-slate-100" : "text-slate-800"}`}
+                  className={`text-base sm:text-lg md:text-xl font-bold ${isDark ? "text-slate-100" : "text-slate-800"}`}
                 >
                   Who I Am
                 </h3>
               </div>
               <p
-                className={`text-sm md:text-base leading-relaxed ${isDark ? "text-slate-400" : "text-slate-600"}`}
+                className={`text-xs sm:text-sm md:text-base leading-relaxed ${isDark ? "text-slate-400" : "text-slate-600"}`}
               >
                 I am Roshan Bhagat, a passionate Frontend Developer from India
                 specializing in React.js and MERN Stack.
@@ -58,7 +58,7 @@ const About = ({ isDark }) => {
 
             {/* Objective Card */}
             <div
-              className={`p-6 md:p-8 rounded-[1.5rem] md:rounded-[2rem] border transition-all duration-300 hover:translate-y-[-5px] ${
+              className={`p-5 sm:p-6 md:p-8 rounded-2xl sm:rounded-[1.5rem] md:rounded-[2rem] border transition-all duration-300 hover:translate-y-[-5px] ${
                 isDark
                   ? "bg-slate-900 border-slate-800"
                   : "bg-white border-transparent shadow-xl shadow-blue-900/5"
@@ -69,13 +69,13 @@ const About = ({ isDark }) => {
                   <Target size={20} className="md:w-6 md:h-6" />
                 </div>
                 <h3
-                  className={`text-lg md:text-xl font-bold ${isDark ? "text-slate-100" : "text-slate-800"}`}
+                  className={`text-base sm:text-lg md:text-xl font-bold ${isDark ? "text-slate-100" : "text-slate-800"}`}
                 >
                   My Objective
                 </h3>
               </div>
               <p
-                className={`text-sm md:text-base leading-relaxed ${isDark ? "text-slate-400" : "text-slate-600"}`}
+                className={`text-xs sm:text-sm md:text-base leading-relaxed ${isDark ? "text-slate-400" : "text-slate-600"}`}
               >
                 My goal is to build scalable and innovative digital solutions
                 while continuously learning.
@@ -85,7 +85,7 @@ const About = ({ isDark }) => {
 
           {/* Right Column: Stats & Description */}
           <div
-            className={`p-6 md:p-10 rounded-[1.5rem] md:rounded-[2rem] border transition-all duration-300 hover:translate-y-[-5px] ${
+            className={`p-5 sm:p-6 md:p-10 rounded-2xl sm:rounded-[1.5rem] md:rounded-[2rem] border transition-all duration-300 hover:translate-y-[-5px] ${
               isDark
                 ? "bg-slate-900 border-slate-800"
                 : "bg-white border-transparent shadow-xl shadow-blue-900/5"
@@ -96,7 +96,7 @@ const About = ({ isDark }) => {
                 <Code2 size={20} className="md:w-6 md:h-6" />
               </div>
               <h3
-                className={`text-lg md:text-xl font-bold ${isDark ? "text-slate-100" : "text-slate-800"}`}
+                className={`text-base sm:text-lg md:text-xl font-bold ${isDark ? "text-slate-100" : "text-slate-800"}`}
               >
                 What I Do
               </h3>
@@ -112,7 +112,7 @@ const About = ({ isDark }) => {
                 }`}
               >
                 <h4
-                  className={`text-2xl md:text-3xl font-extrabold ${isDark ? "text-indigo-400" : "text-blue-600"}`}
+                  className={`text-xl sm:text-2xl md:text-3xl font-extrabold ${isDark ? "text-indigo-400" : "text-blue-600"}`}
                 >
                   5+
                 </h4>
@@ -128,7 +128,7 @@ const About = ({ isDark }) => {
                 }`}
               >
                 <h4
-                  className={`text-2xl md:text-3xl font-extrabold ${isDark ? "text-purple-400" : "text-purple-600"}`}
+                  className={`text-xl sm:text-2xl md:text-3xl font-extrabold ${isDark ? "text-purple-400" : "text-purple-600"}`}
                 >
                   3+
                 </h4>
@@ -139,7 +139,7 @@ const About = ({ isDark }) => {
             </div>
 
             <p
-              className={`text-sm md:text-base leading-relaxed ${isDark ? "text-slate-400" : "text-slate-600"}`}
+              className={`text-xs sm:text-sm md:text-base leading-relaxed ${isDark ? "text-slate-400" : "text-slate-600"}`}
             >
               I specialize in MERN Stack development, using MongoDB, Express.js,
               React.js, and Node.js to build scalable and user-friendly web
