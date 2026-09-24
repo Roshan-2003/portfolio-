@@ -19,10 +19,9 @@ function Home() {
       setIsLoading(false);
     }, 2000); 
 
-    return () => clearTimeout(timer); // Cleanup timer
+    return () => clearTimeout(timer); 
   }, []);
 
-  // 5. Conditional Rendering: Agar loading hai toh loader dikhao, warna content
   if (isLoading) {
     return <Loading />;
   }
