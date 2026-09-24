@@ -16,14 +16,14 @@ const Education = ({ isDark }) => {
       year: "2019 - 2021",
       title: "12th Grade – Science",
       institution: "Gyandeep High School",
-      result: "64.32%",
+      result: "70.32%",
     },
     {
       degree: "Secondary",
       year: "2018 - 2019",
       title: "10th Grade",
       institution: "Holy Child School",
-      result: "60.43%",
+      result: "75.43%",
     },
   ];
 
