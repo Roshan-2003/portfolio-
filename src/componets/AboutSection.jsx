@@ -21,7 +21,7 @@ const About = ({ isDark }) => {
           <h2
             className={`text-2xl sm:text-3xl md:text-4xl font-bold mb-4 px-2 ${isDark ? "text-white" : "text-slate-800"}`}
           >
-            About Roshan Bhagat – Frontend Developer
+            About Roshan Bhagat – Mern stack Developer
           </h2>
           <div className="h-1.5 w-20 md:w-28 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full"></div>
         </div>
@@ -51,8 +51,10 @@ const About = ({ isDark }) => {
               <p
                 className={`text-xs sm:text-sm md:text-base leading-relaxed ${isDark ? "text-slate-400" : "text-slate-600"}`}
               >
-                I am Roshan Bhagat, a passionate Frontend Developer from India
-                specializing in React.js and MERN Stack.
+                I am Roshan Bhagat, a passionate MERN Stack Developer from
+                India, specializing in MongoDB, Express.js, React.js, and
+                Node.js. I enjoy building modern, scalable, and user-friendly
+                full-stack web applications.
               </p>
             </div>
 
